@@ -339,6 +339,18 @@ h2 {
 .card a.card-link:hover { color: var(--accent); border-color: var(--accent); }
 .card a.card-link svg { width: 14px; height: 14px; }
 .card-tagline { font-size: 14.5px; color: var(--text-dim); margin: 0 0 12px; }
+.card-demo {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  margin: -4px 0 12px;
+  width: fit-content;
+}
+.card-demo:hover { text-decoration: underline; }
 .card-why { font-size: 13.5px; color: var(--text-faint); margin: 0 0 16px; padding-left: 12px; border-left: 2px solid var(--accent-dim); }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
 .tag {

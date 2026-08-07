@@ -4,7 +4,7 @@
 
 Static, dependency-free portfolio (HTML/CSS/vanilla JS — no build step) with an EN/JP
 language toggle and light/dark theme. Content is based on `Shogo_Hida_CV.docx` (EN) and
-`職務経歴書 小森翔吾.docx` (JA), plus four featured personal projects.
+`職務経歴書 小森翔吾.docx` (JA), plus five featured personal projects.
 
 Deployed on Cloudflare Pages (free tier). Source: https://github.com/shogohida/portfolio-site
 
@@ -66,18 +66,25 @@ you want to skip creating another account.
 
 ## Featured project repos — status
 
-The four project cards link to, all confirmed public and live:
+The five project cards link to, all confirmed public and live:
 - https://github.com/shogohida/ghg-rag
 - https://github.com/shogohida/incident-agent
-- https://github.com/shogohida/raftkv
+- https://github.com/shogohida/raftkv — plus a live demo at https://raftkv-demo.onrender.com
+- https://github.com/shogohida/sqllab — plus a live demo at https://sqllab-demo.onrender.com
 - https://github.com/shogohida/cleanarchguard
 
-(They were already pushed but set to Private; visibility was switched to Public so the
-links work for external visitors.)
+`raftkv` and `sqllab` are deployed for free on Render (`render.yaml` in each repo, no
+Docker, no credit card required for the free plan). Free-tier services sleep after 15
+minutes of inactivity — the first request after a sleep takes a few seconds to wake up.
+
+`ghg-rag`, `incident-agent`, and `cleanarchguard` are GitHub-only: each either needs a
+metered LLM API key on a public endpoint (cost/abuse risk) or, in `cleanarchguard`'s
+case, has no browser UI to demo — see each repo's own README for why.
 
 `ecocopilot` also has a `.git` set up locally but no remote configured, and `policydiff`
-has no git repo at all yet — neither is currently linked from the site, so no action is
-needed unless you want to feature them too.
+has no git repo at all yet — neither is currently linked from the site. `ecocopilot`
+specifically can't get a free public demo either: its default local LLM
+(`qwen2.5:14b-instruct` via Ollama) needs 8–12GB RAM, far beyond any free hosting tier.
 
 ## File structure
 

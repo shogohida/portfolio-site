@@ -246,10 +246,35 @@
       </div>
       <p class="card-tagline en">A replicated key-value store built on a from-scratch implementation of the Raft consensus algorithm — leader election, log replication, and persistence — with a live browser demo of elections in action.</p>
       <p class="card-tagline ja">Raftコンセンサスアルゴリズムをゼロから実装し、その上にレプリケーションされたキーバリューストアを構築。リーダー選出をブラウザからリアルタイムに確認できるデモ付き。</p>
+      <a class="card-demo" href="https://raftkv-demo.onrender.com" target="_blank" rel="noopener">
+        <span class="en">▶ Live demo</span><span class="ja">▶ ライブデモ</span>
+      </a>
       <p class="card-why en">Production experience with distributed systems doesn't automatically prove consensus-level reasoning. This is a correct, tested implementation of the algorithm behind etcd, Consul, and CockroachDB.</p>
       <p class="card-why ja">実務での分散システム経験だけでは、コンセンサスレベルの理論的な正しさは証明できない。etcd・Consul・CockroachDBを支えるアルゴリズムを、テスト付きで正確に実装。</p>
       <div class="tags">
         <span class="tag">Go</span><span class="tag">Raft Consensus</span><span class="tag">No deps</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <h3 class="card-title">
+          <span class="en">SQL Query Optimizer Lab</span>
+          <span class="ja">SQLクエリ最適化ラボ</span>
+        </h3>
+        <a class="card-link" href="https://github.com/shogohida/sqllab" target="_blank" rel="noopener" aria-label="View source on GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.1c-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.7 1.25 3.36.96.1-.74.4-1.25.72-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.24 2.75.12 3.04.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.17v3.21c0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+        </a>
+      </div>
+      <p class="card-tagline en">Run a query unindexed and watch it scan; add the suggested index and rerun the same query to see the plan flip to a search — plus a natural-language-to-SQL panel that runs entirely in your browser, no server-side model or API key.</p>
+      <p class="card-tagline ja">インデックスなしでクエリを実行してスキャンを体感し、推奨インデックスを追加して同じクエリを再実行すると実行計画がサーチに切り替わる。自然言語→SQL変換パネルはブラウザ内だけで完結し、サーバー側モデルもAPIキーも不要。</p>
+      <a class="card-demo" href="https://sqllab-demo.onrender.com" target="_blank" rel="noopener">
+        <span class="en">▶ Live demo</span><span class="ja">▶ ライブデモ</span>
+      </a>
+      <p class="card-why en">The reproducible version of a résumé claim — "40% performance improvement via load profiling and indexing" — that a visitor can trigger themselves, not just read. The AI panel runs client-side via WebLLM/WebGPU so the public demo never calls a metered LLM API.</p>
+      <p class="card-why ja">「負荷プロファイリングとインデックス最適化で40%改善」という職務経歴の一文を、訪問者自身が再現できる形にした。AIパネルはWebLLM/WebGPUでクライアント側実行のため、公開デモが従量課金APIを呼ぶことは一切ない。</p>
+      <div class="tags">
+        <span class="tag">Go</span><span class="tag">SQLite</span><span class="tag">WebLLM</span><span class="tag">WebGPU</span>
       </div>
     </article>
 
@@ -379,6 +404,10 @@
     <a class="contact-card" href="https://github.com/shogohida" target="_blank" rel="noopener">
       <span class="icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.1c-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.7 1.25 3.36.96.1-.74.4-1.25.72-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.24 2.75.12 3.04.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.17v3.21c0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg></span>
       <span><span class="label">GitHub</span><br><span class="value">shogohida</span></span>
+    </a>
+    <a class="contact-card" href="https://www.linkedin.com/in/shogo-hida/" target="_blank" rel="noopener">
+      <span class="icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg></span>
+      <span><span class="label">LinkedIn</span><br><span class="value">shogo-hida</span></span>
     </a>
     <a class="contact-card" href="#top">
       <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
