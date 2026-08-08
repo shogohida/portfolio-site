@@ -66,16 +66,21 @@ you want to skip creating another account.
 
 ## Featured project repos — status
 
-The five project cards link to, all confirmed public and live:
+The six project cards link to, all confirmed public:
 - https://github.com/shogohida/ghg-rag
 - https://github.com/shogohida/incident-agent
 - https://github.com/shogohida/raftkv — plus a live demo at https://raftkv-demo.onrender.com
 - https://github.com/shogohida/sqllab — plus a live demo at https://sqllab-demo.onrender.com
 - https://github.com/shogohida/cleanarchguard
+- https://github.com/shogohida/routelab — plus a live demo at https://routelab-demo.onrender.com
 
-`raftkv` and `sqllab` are deployed for free on Render (`render.yaml` in each repo, no
-Docker, no credit card required for the free plan). Free-tier services sleep after 15
-minutes of inactivity — the first request after a sleep takes a few seconds to wake up.
+`raftkv`, `sqllab`, and `routelab` are deployed for free on Render (`render.yaml` in each
+repo, no Docker, no credit card required for the free plan). Free-tier services sleep
+after 15 minutes of inactivity — the first request after a sleep takes a few seconds to
+wake up. `routelab`'s demo has been observed intermittently 404-ing well past the normal
+wake-up window (an underlying Render free-tier flakiness, not an app bug — the same
+request against the same warm instance succeeds moments later); if it happens, retry
+after a few seconds.
 
 `ghg-rag`, `incident-agent`, and `cleanarchguard` are GitHub-only: each either needs a
 metered LLM API key on a public endpoint (cost/abuse risk) or, in `cleanarchguard`'s
